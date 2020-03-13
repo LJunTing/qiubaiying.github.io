@@ -1,10 +1,10 @@
 # Site settings
-title: BY Blog
-SEOTitle: 俊亭的博客 | BY Blog
+title: JT Blog
+SEOTitle: 俊亭的博客 | JT Blog
 header-img: img/post-bg-desk.jpg
 email: liujunting686@gmail.com
 description: "Every failure is leading towards success."
-keyword: "BY, BY Blog, 俊亭的博客, LJunTing
+keyword: "JT, JT Blog, 俊亭的博客, LJunTing
 , JAVA, Android, 大数据"
 url: "http://LJunTing.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
