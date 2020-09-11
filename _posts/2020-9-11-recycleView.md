@@ -23,9 +23,11 @@ tags:                               #标签
 
 ### 简单使用
 
+    //初始化 EasyRecyclerView
     EasyRecyclerView topRecyclerView = new EasyRecyclerView(FilterMvActivity.this);
     ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
     topRecyclerView.setLayoutParams(layoutParams);
+    // 设置adapter,LayoutManager
     FilterAdapter filterAdapter = new FilterAdapter(FilterMvActivity.this, list);
     topRecyclerView.setLayoutManager(new LinearLayoutManager(FilterMvActivity.this, LinearLayoutManager.VERTICAL, false));
     topRecyclerView.setAdapter(filterAdapter);
@@ -57,8 +59,8 @@ tags:                               #标签
 
 
     /**
-     * 自定义方法 传入position
-     *
+     * 自定义方法 传入position,已达到状态更新的效果
+     * 直接在这个界面设置position不行,只有从adapter中传过来的选中的position才行
      * @param data
      * @param position
      */
@@ -70,3 +72,15 @@ tags:                               #标签
             textView.setBackgroundColor(Color.BLACK);
         }
     }
+###  GridView添加头部View
+
+```java
+
+//创建gridLayoutManager,并设置gridview如果添加头部,把头部的几个列合并成一行,达到添加头部效果
+ 				GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 5, GridLayoutManager.VERTICAL, false);
+//RecyclerArrayAdapter封装好的gridviewmanager类型的添加头部
+        RecyclerArrayAdapter<MainInfoBean>.GridSpanSizeLookup gridSpanSizeLookup = filterMainAdapter.obtainGridSpanSizeLookUp(5);
+        gridLayoutManager.setSpanSizeLookup(gridSpanSizeLookup);
+        easyRecyclerView.setLayoutManager(gridLayoutManager);
+```
+
