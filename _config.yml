@@ -1,10 +1,10 @@
 # Site settings
 title: JT Blog
-SEOTitle: 俊亭的博客 | JT Blog
+SEOTitle: JT的博客 | JT Blog
 header-img: img/post-bg-desk.jpg
 email: liujunting686@gmail.com
 description: "Every failure is leading towards success."
-keyword: "JT, JT Blog, 俊亭的博客, LJunTing
+keyword: "JT, JT Blog, JT的博客, LJunTing
 , JAVA, Android, 大数据"
 url: "http://LJunTing.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -13,7 +13,7 @@ github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/avatar-g     # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/jt_logo     # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
